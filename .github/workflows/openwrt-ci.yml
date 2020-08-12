@@ -10,10 +10,11 @@ name: OpenWrt-CI 云
 
 on:
   schedule:
-    - cron: 0 20 * * *
+    - cron: 0 8 * * *
   release:
     types: [published]
-
+  watch:
+    types: [started]
 jobs:
 
   build_openwrt:
